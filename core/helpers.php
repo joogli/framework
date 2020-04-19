@@ -8,7 +8,7 @@ if (!function_exists('base_path')) {
 }
 
 if (!function_exists('view')) {
-    function view(string $template, array $args = null): string
+    function view(string $template, array $args = []): string
     {
         return \Joogli\Utils\View::make($template, $args);
     }
